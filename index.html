@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ferretech | Herramientas y materiales de construcción</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__fila">
+            <a href="index.html" class="header__marca">
+                <span class="header__logo">FERRE<span class="header__logo-acento">TECH</span></span>
+                <span class="header__eslogan">Herramientas &amp; construcción</span>
+            </a>
+
+            <nav class="header__nav">
+                <a href="login.html" class="header__enlace">Mi cuenta</a>
+                <a href="carrito.html" class="carrito_compras" id="link-carrito">
+                    <img src="img/descarga.png" alt="" class="imagen_carrito">
+                    <span class="carrito__contador" id="contador-carrito">0</span>
+                    <span class="sr-only">Carrito de compras</span>
+                </a>
+            </nav>
+        </div>
+        <div class="franja-peligro" aria-hidden="true"></div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__contenido">
+            <p class="hero__eyebrow">Ferretería de barrio, stock real</p>
+            <h1 class="hero__titulo">Lo que necesitas para tu próximo proyecto</h1>
+            <p class="hero__texto">
+                Pintura y herramientas con precio y stock actualizado.
+                Agrega al carrito, retira en tienda o coordina despacho.
+            </p>
+            <div class="hero__chips">
+                <span class="chip">Stock verificado</span>
+                <span class="chip">Retiro en tienda</span>
+                <span class="chip">Pago seguro</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <section class="contenedor">
+
+            <div class="seccion__titulo">
+                <h2>Catálogo de productos</h2>
+                <p class="seccion__subtitulo">Precios en CLP, stock sujeto a disponibilidad.</p>
+            </div>
+            
+            <div class="buscador">
+                <input type="text" id="buscador-input" placeholder="Buscar producto...">
+            </div>
+
+            <div id="catalogo" class="catalogo"></div>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="franja-peligro" aria-hidden="true"></div>
+        <div class="footer__contenido">
+
+            <span class="footer__lado">Horario
+                <p>1</p>
+            </span>
+
+            <div class="footer__marca">
+                <span class="header__logo footer__logo">FERRE<span class="header__logo-acento">TECH</span></span>
+                <p>Curso de Desarrollo Web · Proyecto Ferretech</p>
+            </div>
+
+            <span class="footer__lado">Ubicación
+                <p>1</p>
+            </span>
+        </div>
+    </footer>
+
+    <script src = "js/login.js"></script>
+    <script src = "js/carrito.js"></script>
+    <script src = "js/catalogo.js"></script>
+
+</body>
+</html>
