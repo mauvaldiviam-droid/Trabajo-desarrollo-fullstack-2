@@ -30,6 +30,16 @@ function agregarAlCarrito(producto) {
 
     guardarCarrito(carrito);
     actualizarContadorCarrito();
+    
+    Swal.fire({
+        toast: true,
+        position: 'top-end',
+        icon: 'success',
+        title: `"${producto.nombre}" agregado al carrito`,
+        showConfirmButton: false,
+        timer: 1800,
+        timerProgressBar: true
+    });
 }
 
 function quitarDelCarrito(producto) {
